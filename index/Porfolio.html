@@ -4,89 +4,136 @@
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="/style/main.css" rel="stylesheet" />
   </head>
-  <body>
+
+  <body class="main">
     <header>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Resume</li>
-          <li>Contact</li>
+      <nav class="nav">
+        <ul class="nav-link">
+          <li class="nav-link-li">Home</li>
+          <li class="nav-link-li">Resume</li>
+          <li class="nav-link-li"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="container">
-        <img src="/img/Profile.jpeg" />
-        <div>
-          <h1>Hello!, I'm Kabir G C</h1>
-          <p>
-            I am a programmer who is currently at the initial phase of
-            programming in full stack development
-          </p>
+        <div class="row">
+          <img class="protfolio-img" src="/img/Profile.jpeg" />
+          <div class="intro">
+            <h1 class="into-name">Hello! I'm Kabir G C</h1>
+            <p class="into-detail">
+              I am a programmer who is currently at the initial phase of
+              programming in full stack development
+            </p>
+          </div>
         </div>
       </div>
-      <div>
-        <span>Programming language</span>
-        <ul>
-          <li>Html</li>
-          <li>CSS</li>
-          <li>JS</li>
-          <li>React</li>
-          <li>Node js</li>
-          <li>Python</li>
-          <li>Mangodb</li>
-        </ul>
+      <div class="container">
+        <div class="skills">
+          <h1 class="skills-set">Programming language</h1>
+          <ul class="skills-image">
+            <li>
+              <img class="skills-img" src="/img/html.png" /><span
+                class="skills-image-li"
+              >
+                Html</span
+              >
+            </li>
+            <li>
+              <img class="skills-img" src="/img/css.png" /><span
+                class="skills-image-li"
+                >CSS</span
+              >
+            </li>
+            <li>
+              <img class="skills-img" src="/img/JavaScript-logo.png" /><span
+                class="skills-image-li"
+                >JS</span
+              >
+            </li>
+            <li>
+              <img class="skills-img" src="/img/recat.png" /><span
+                class="skills-image-li"
+                >React</span
+              >
+            </li>
+            <li>
+              <img class="skills-img" src="/img/ndoe.png" /><span
+                class="skills-image-li"
+                >Node js</span
+              >
+            </li>
+            <li>
+              <img class="skills-img" src="/img/python.png" /><span
+                class="skills-image-li"
+                >Python</span
+              >
+            </li>
+            <li>
+              <img class="skills-img" src="/img/download.png" /><span
+                class="skills-image-li"
+                >Mangodb</span
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="contact">
+      <div class="container">
         <h2><span>Get in touch</span></h2>
-        <div>
-           <h3> Contact </h3> 
-           <p>
-            I am a web designer who is willing to try my best at any task given to me.
-           </p>
-           <span> For more info:</span>
-           <span>binayakgc@gmail.com</span>
-           <span> +61 0451774009</span>
-        </div>
-        <div>
+        <div class="contact" id="contact">
           
-          <form>
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="First Name"
-            /><br /><br />
-            <input
-              type="text"
-              id="fname"
-              name="lname"
-              placeholder="Last Name"
-            /><br /><br />
-            <input
-              type="text"
-              id="fname"
-              name="email"
-              placeholder="Email"
-            /><br /><br />
-            <input
-              type="text"
-              id="fname"
-              name="subject"
-              placeholder="Subject"
-            /><br /><br />
-            <input
-              type="textarea"
-              id="fname"
-              name="messgae"
-              placeholder="Message"
-            /><br /><br />
-          </form>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p>
+              I am a web designer who is willing to try my best at any task
+              given to me.
+            </p>
+            <span> For more info:</span>
+            <span>binayakgc@gmail.com</span><br><br>
+            <span> Phone:</span><span> +61 0451774009</span>
+          </div>
+          <div class="contact-form">
+            <form class="contact-form-detail">
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+              /><br /><br />
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+              /><br /><br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+              /><br /><br />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+              /><br /><br />
+              <input
+                type="textarea"
+                id="messgae"
+                name="messgae"
+                placeholder="Message"
+              /><br /><br />
+              <button class="btn">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <span> Copyright &copy; 2024 Kabir G C</span>
+    </footer>
   </body>
 </html>
