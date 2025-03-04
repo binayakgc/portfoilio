@@ -143,3 +143,45 @@ input[type=textarea] {
 footer{
     text-align: center;
 }
+
+
+/* //////////////////////////////////////////////////////// */
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+
+    .row{
+        display: block;
+        text-align: center;
+        justify-items:center ;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .contact{
+        display: block;
+        text-align: center;
+        justify-items:center;
+        width: 100%;
+    }
+
+    .contact-info {
+        padding-bottom: 30px;
+        width: 100%;
+        
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+    
+    .btn {
+        margin-left: 0;
+    }
+
+}

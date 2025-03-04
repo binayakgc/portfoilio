@@ -1,4 +1,6 @@
-function submit() {
+function submitForm(event) {
+    event.preventDefault();
+
     const fname = document.getElementById('fname').value;
     const lname = document.getElementById('lname').value;
     const email = document.getElementById('email').value;
@@ -7,6 +9,7 @@ function submit() {
 
 
     const data = `Name : ${fname} ${lname}\nEmail : ${email}\nSubject : ${subject} \nMessage : ${message}`;
+    console.log(data)
     const blob = new Blob([data], {type: 'text/plain'});
 
     const link =document.createElement('a');
@@ -17,3 +20,8 @@ function submit() {
     link.click();
     document.body.removeChild(link);
 }
+
+// function submit2(event) {
+//     console.log({event})
+//     event.preventDefault();
+// }

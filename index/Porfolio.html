@@ -95,7 +95,7 @@
             <span> Phone:</span><span> +61 0451774009</span>
           </div>
           <div class="contact-form">
-            <form class="contact-form-detail" id="contact-form">
+            <form  onSubmit="submitForm(event)" method="post" class="contact-form-detail" id="contact-form">
               <input
                 type="text"
                 id="fname"
@@ -122,11 +122,11 @@
               /><br /><br />
               <input
                 type="textarea"
-                id="messgae"
-                name="messgae"
+                id="message"
+                name="message"
                 placeholder="Message"
               /><br /><br />
-              <button type="button" class="btn" onclick="submit()">Submit</button>
+              <button type="submit" class="btn">Submit</button>
             </form>
           </div>
         </div>
